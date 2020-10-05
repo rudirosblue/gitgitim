@@ -27,7 +27,7 @@ Parameters:
       - cc2.8xlarge
       - cg1.4xlarge
 Resources:
-  WebServerSecurityGroup:
+  WebSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Enable HTTP for Apache Web Server
@@ -50,7 +50,7 @@ Resources:
       InstanceType: t2.micro
       KeyName: t
       SecurityGroupIds:
-        - !Ref WebServerSecurityGroup
+        - !Ref WebSecurityGroup
       Tags:                
         - Key: Name
           Value: !Sub Web Server of ${AWS::StackName} Stack   
