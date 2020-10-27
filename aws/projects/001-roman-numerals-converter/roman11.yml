@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+    produce an cloudformation template ensure render 
+    an roman number converter when user input an decimal number
+    the program converts decımal num to roman
+Parameters:
+    KeyPairName:
+        Description: Enter the name of your Key Pair for SSH connections
+        Type: AWS::EC2::KeyPair::KeyName
+        ConstraintDescription: Must one of the existing EC2 KeyPair
+      
+Resources:
+    WebServerSecurityGroup:
+        
+    
+Transform:
+    
+Outputs:
